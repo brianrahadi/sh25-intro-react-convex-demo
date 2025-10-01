@@ -1,51 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/Header'
+import HeroSection from './components/HeroSection'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <body>
-      <header className="container header">
-        <div className="header--title">
-          <p className="header--name"><b>Sebastian Lee</b></p>
-
-          <button id="menu-btn">
-            <img src="./assets/icons/icon-menu.svg" alt="Menu Icon" />
-          </button>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#" className="btn">View Resume</a></li>
-          </ul>
-
-        </nav>
-      </header>
+      <Header />
 
       <main>
-        <section className="content-container" id="hero">
-          <p className="hero--intro-text">Hello world! My name is</p>
-          <h1>Sebastian Lee</h1>
-          <p className="hero--description">
-            <span>Software Engineer.</span> A driven individual interested in building high-quality products for the web.
-          </p>
-          <div className="hero--social-links">
-            <a href="#" className="btn">
-              <img src="./assets/icons/icon-github.svg" alt="GitHub Icon" />
-                GitHub</a>
-            <a href="#" className="btn">
-              <img src="./assets/icons/icon-email.svg" alt="Email Icon" />
-                Email</a>
-            <a href="#" className="btn">
-              <img src="./assets/icons/icon-linkedin.svg" alt="LinkedIn Icon" />
-                LinkedIn</a>
-          </div>
-        </section>
+        <HeroSection />
         <section className="content-container" id="about">
           <div className="about--content">
             <div>
