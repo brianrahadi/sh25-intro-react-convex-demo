@@ -1,3 +1,5 @@
+import MenuBtn from '../assets/icons/icon-menu.svg'
+
 export default function Header() {
     return (
         <header className="container header">
@@ -5,7 +7,7 @@ export default function Header() {
           <p className="header--name"><b>Sebastian Lee</b></p>
 
           <button id="menu-btn">
-            <img src="./assets/icons/icon-menu.svg" alt="Menu Icon" />
+            <img src={MenuBtn} alt="Menu Icon" />
           </button>
         </div>
         <nav>

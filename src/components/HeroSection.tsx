@@ -1,3 +1,7 @@
+import GithubIcon from '../assets/icons/icon-github.svg'
+import EmailIcon from '../assets/icons/icon-email.svg'
+import LinkedIcon from '../assets/icons/icon-linkedin.svg'
+
 export default function HeroSection() {
     return (
         <section className="content-container" id="hero">
@@ -8,13 +12,13 @@ export default function HeroSection() {
             </p>
             <div className="hero--social-links">
                 <a href="#" className="btn">
-                    <img src="./assets/icons/icon-github.svg" alt="GitHub Icon" />
+                    <img src={GithubIcon} alt="GitHub Icon" />
                     GitHub</a>
                 <a href="#" className="btn">
-                    <img src="./assets/icons/icon-email.svg" alt="Email Icon" />
+                    <img src={EmailIcon} alt="Email Icon" />
                     Email</a>
                 <a href="#" className="btn">
-                    <img src="./assets/icons/icon-linkedin.svg" alt="LinkedIn Icon" />
+                    <img src={LinkedIcon} alt="LinkedIn Icon" />
                     LinkedIn</a>
             </div>
         </section>
